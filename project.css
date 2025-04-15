@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap');
+/* this is the font i imported from google font */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"EB Garamond", serif;
+
+}
+body{
+    background: #f6f6f6;
+}
+nav{
+    background: #232f3e;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 18 px;
+}
+.search-container input ,button{
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+
+}
+.search-container input{
+    width: 300px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #ccc;
+}
+.search-container button{
+    background: rgb(236, 166, 61);
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.search-container button:hover{
+    background: rgb(244, 8, 24);
+}
+
+/* main movie section styling */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+}
+
+main section{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 75vh;
+}
+
+.movie-container{
+    display:flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: opx 0px 20px rgba(0,0,0,0.1);
+    width: 80%;
+    border-radius: 5px;
+}
+
+.movie-poster img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 5px 0 0 5px;
+
+}
+.movie-info{
+    padding-inline:15px;
+}
+.movie-info h2{
+    text-align:center;
+    font-size:32px;
+    margin : 20px 0 12px 0;
+}
+.movie-info+p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.movie-info .movie-genre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5px;;
+}
+.movie-info .movie-genre p{
+    background:#232f3e;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline:5px;
+    border:2px solid #000000;
+    border-radius: 5px;
+    font-weight: 700;
+    overflow-x :auto;
+}
+.movie-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+}
+
+.movie-container.nobackground {
+    background:none;
+    box-shadow: none;
+    align-items: center;
+    }
+footer{
+    text-align: center;
+    background: #232f3e;
+    color: #fff;
+    padding-block: 20px;   /*padding-block is the shorthand for top and bottom */
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container{
+        margin-top: 10px;
+    }
+    .movie-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie-poster img{
+
+        width: 100%;
+        height: fit-content;
+        margin-right: 0;
+    }
+    .movie-info{
+        padding-inline: 30px;
+    }
+    
+    .movie-info h2{
+        font-size: 24px;
+    }
+    .movie-info p{
+        font-size: 16px;
+    }
+}
