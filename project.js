@@ -100,3 +100,4 @@ const handleForm = (e) =>{e.preventDefault(); // Prevent the form from submittin
         showError("enter movie name to get movie information");
     }}
 searchForm.addEventListener('submit', handleForm);
+
